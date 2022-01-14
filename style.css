@@ -1,0 +1,132 @@
+/* General */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Layout */
+
+body {
+  color: #000;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  letter-spacing: 0.75px;
+  background-color: antiquewhite;
+}
+
+span {
+  color: orange;
+  letter-spacing: 1.5px;
+  display: inline-block;
+}
+
+input {
+  display: block;
+  border: 0.5px solid rgb(90, 85, 79);
+  margin: 0.5em 0;
+  padding: 0.25em 0.5em;
+  text-align: center;
+  border-radius: 6px;
+  outline: none;
+}
+
+input:nth-child(2) {
+  margin-bottom: 2em;
+}
+
+/* Main */
+
+.flex-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+  max-height: 100vh;
+}
+
+.main {
+  color: aliceblue;
+  height: 40vh;
+  width: 100%;
+  background-image: url(../img/dark-ribs.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.main-title {
+  padding: 1em;
+}
+
+.main-title h1 {
+  font-weight: 500;
+  font-size: 1.5rem;
+  text-transform: capitalize;
+  word-spacing: -2px;
+  letter-spacing: 1px;
+}
+
+.main-subtitle {
+  margin-bottom: 1.5em;
+  text-transform: uppercase;
+  font-weight: 700;
+  animation: subtitle-animation 4s 1 cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.main-announce {
+  border-top: 10px solid orange;
+  text-transform: uppercase;
+  order: -1;
+  font-size: 0.6rem;
+}
+
+.main-announce h3 {
+  padding-top: 2px;
+}
+
+/* Animation */
+@keyframes subtitle-animation {
+  0% {
+    word-spacing: -10px;
+  }
+  100% {
+    word-spacing: 2px;
+  }
+}
+
+/* Form Section */
+
+.form-section {
+  justify-content: flex-start;
+  padding: 2em;
+}
+
+.form-title {
+  text-transform: capitalize;
+  padding: 1em;
+}
+
+.form-body p {
+  font-size: 0.75rem;
+  margin: 0 auto;
+  width: 80%;
+  margin-bottom: 1em;
+}
+
+.form-btn {
+  background-color: rgba(201, 47, 12, 0.735);
+  padding: 0.5em 1.5em;
+  width: 80%;
+  border-radius: 4px;
+  color: white;
+  cursor: pointer;
+  border: none;
+  margin-bottom: 2rem;
+}
+
+.form-disclaimer {
+  font-size: 0.45rem;
+  width: 50%;
+}
